@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+//int main(){
+
+  int sayi = 0, eb = 0;
+
+  do{
+
+    fprintf(stdout, "Sayi giriniz: ");
+    fscanf(stdin, "%d", &sayi);
+
+    if(sayi > eb) eb = sayi;
+
+  } while(sayi != 0);
+
+  fprintf(stdout, "EB: %d", eb);
+
+  return 0;
+//}
+ 
+int main() {
+    double a, b, sonuc;
+    printf("Sayı 1: ");
+    scanf("%lf", &a);
+    printf("Sayı 2: ");
+    scanf("%lf", &b);  
+ 
+    sonuc = a * b;
+ 
+    printf("Sonuç = %.2lf", sonuc);
+    
+    return 0;
+}
